@@ -1,0 +1,12 @@
+[Unit]
+Description=elgato PI Deck UI
+After=network.target
+
+[Service]
+ExecStart=/opt/elgato-pi-deck/start.sh
+ExecStop=/opt/elgato-pi-deck/stop.sh
+Restart=always
+RestartSec=300
+
+[Install]
+WantedBy=multi-user.target
