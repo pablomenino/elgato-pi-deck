@@ -1,0 +1,96 @@
+{
+    "info": "elgato-pi-deck",
+    "version": "0.9",
+    "FONT_SRC": "Roboto-Regular.ttf",
+    "FONT_SIZE": "16",
+    "PANEL_SELECT": "0",
+    "PANEL_BRIGHTNESS": "30",
+    "PANEL_BRIGHTNESS_STEP": "10",
+    "deck_poweron": "True",
+    "panel0":
+    [
+        {
+            "type": "gotopanel",
+            "name": "Apps",
+            "gotopanelid": "1",
+            "image": "icons/utilities.png",
+            "image_pressed": "icons/utilities-pressed.png"
+        },
+        {
+            "type": "gotopanel",
+            "name": "IoT",
+            "gotopanelid": "2",
+            "image": "icons/iot.png",
+            "image_pressed": "icons/iot.png"
+        },
+        {
+            "type": "wakeonlan",
+            "name": "NAS",
+            "image": "icons/1618plus.png",
+            "image_pressed": "icons/1618plus.png",
+            "nodename": "NAS",
+            "nodeip": "192.168.0.22",
+            "nodemac": "00:FF:AA:FF:AA:BB"
+        },
+        {
+            "type": "bright0",
+            "name": "Bright 0%",
+            "image": "icons/brightness-0.png",
+            "image_pressed": "icons/brightness-0.png"
+        },
+        {
+            "type": "brightless",
+            "name": "Bright -",
+            "image": "icons/brightness-less.png",
+            "image_pressed": "icons/brightness-less.png"
+        },
+        {
+            "type": "brightmore",
+            "name": "Bright +",
+            "image": "icons/brightness-more.png",
+            "image_pressed": "icons/brightness-more.png"
+        },
+        {
+            "type": "bright100",
+            "name": "Bright 100%",
+            "image": "icons/brightness-100.png",
+            "image_pressed": "icons/brightness-100.png"
+        }
+    ],
+    "panel1":
+    [
+        {
+            "type": "gotopanel",
+            "name": "Back To Main Panel",
+            "gotopanelid": "0",
+            "image": "icons/back.png",
+            "image_pressed": "icons/back-pressed.png"
+        },
+        {
+            "type": "action",
+            "name": "Firefox",
+            "image": "icons/firefox.png",
+            "image_pressed": "icons/firefox.png",
+            "action": "firefox",
+            "serverip": "192.168.0.10",
+            "serverport": "8889"
+        }
+    ],
+    "panel2":
+    [
+        {
+            "type": "gotopanel",
+            "name": "Back To Main",
+            "gotopanelid": "0",
+            "image": "icons/back.png",
+            "image_pressed": "icons/back-pressed.png"
+        },
+        {
+            "type": "webhook",
+            "name": "Ligth CPU",
+            "image": "icons/ligth.png",
+            "image_pressed": "icons/ligth.png",
+            "webhookurl": "http://192.168.0.48/api/webhook/200"
+        }
+    ]
+}
