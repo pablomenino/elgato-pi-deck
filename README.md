@@ -1,5 +1,5 @@
 <h3 align="center">elgato-pi-deck</h3>
-<h3 align="center">Version: 0.9</h3>
+<h3 align="center">Version: 0.9.1</h3>
 <p align="center">elgato-pi-deck - Is a python script to control Elgato Stream Deck and send actions to elgato-pi-deck-server.</p>
 
 <p align="center">
@@ -8,8 +8,6 @@
 </p>
 
 **This is the client part of [elgato-pi-deck](https://github.com/pablomenino/elgato-pi-deck/) and works with [elgato-pi-deck-server](https://github.com/pablomenino/elgato-pi-deck-server/)**
-
-**This is a basic script to be used like a template or idea of something more complex that you need**
 
 ## Table of contents
 
@@ -55,7 +53,9 @@ sudo pip3 install wakeonlan
 
 <a href="https://raw.githubusercontent.com/pablomenino/elgato-pi-deck-server/master/Assets/diagam.png"><img src="https://raw.githubusercontent.com/pablomenino/elgato-pi-deck-server/master/Assets/diagam.png" width="380"></a>
 
-In this case you are on Raspberry PI:
+This guide is intended to help you to configure the script parameters (config.json) and software.
+
+For this example elgato-pi-deck are be installed on Raspberry Pi (This is only an example):
 
 Clone this repo in /opt
 
@@ -176,34 +176,55 @@ Example config:
 
 ## **Config info:**
 
-You can change the font and size (edit config.json):
+### You can change the font and size (edit config.json):
 
 ```
     "FONT_SRC": "Roboto-Regular.ttf",
     "FONT_SIZE": "16",
 ```
 
-You can select wath panel to load at start up:
+You can add new fonts to Assets/fonts directory.
+
+### You can select wath panel to load at start up:
 
 ```
     "PANEL_SELECT": "0",
 ```
 
-Set the initial screen brightness:
+### Set the initial screen brightness:
 
 ```
     "PANEL_BRIGHTNESS": "30",
 ```
 
-Set display on/off in start up:
+This example set the screen brightness to 30%
+
+### Set display on/off in start up:
 
 ```
     "deck_poweron": "True",
 ```
 
-By default the script assign the last key in panel (panel0) to power on/power off display.
+By default is always on.
 
-You have severals type of buttons:
+
+### Defaults buttons
+
+The script assign the last key in panel (panel0) to power on/power off display.
+
+### You have severals type of buttons:
+
+* blank (blank button)
+
+```
+            "type": "blank",
+            "name": "",
+            "image": "icons/utilities.png",
+            "image_pressed": "icons/utilities-pressed.png"
+```
+**name:** name to display.
+
+Images path is in the Assets folder
 
 * gotopanel (select this to change the selected panel)
 
@@ -315,9 +336,3 @@ Images path is in the Assets folder
 ```
 sudo ./uninstall.sh
 ```
-
-## <a name="To-Do">To-Do
-
-* Write documentation to edit script
-* Generate a config file to add actions/buttons more simple
-* Create a configuration GUI
