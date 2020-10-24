@@ -1,18 +1,36 @@
-<h3 align="center">elgato-pi-deck</h3>
-<h3 align="center">Version: 0.9.1</h3>
-<p align="center">elgato-pi-deck - Is a python script to control Elgato Stream Deck and send actions to elgato-pi-deck-server.</p>
+<!-- start badges -->
+![GitHub release](https://img.shields.io/github/release/pablomenino/elgato-pi-deck)
+![GitHub license](https://img.shields.io/github/license/pablomenino/elgato-pi-deck)
+![GitHub last commit](https://img.shields.io/github/last-commit/pablomenino/elgato-pi-deck)
+![GitHub repo size](https://img.shields.io/github/repo-size/pablomenino/elgato-pi-deck)
+![Contributors](https://img.shields.io/github/contributors-anon/pablomenino/elgato-pi-deck)
+![GitHub followers](https://img.shields.io/github/followers/pablomenino?label=Follow)
+![Twitter Follow](https://img.shields.io/twitter/follow/pmenino)
+<!-- end badges -->
 
-<p align="center">
-<a href="https://github.com/pablomenino/elgato-pi-deck/releases"><img src="https://img.shields.io/github/release/pablomenino/elgato-pi-deck.svg"></a>
-<a href="./LICENSE"><img src="https://img.shields.io/github/license/pablomenino/elgato-pi-deck.svg"></a>
+<!-- start description -->
+<h1>Welcome to elgato-pi-deck 👋</h1>
+<p>
+    <a href="https://lab.mfwlab.com/lab/elgato-pi-deck/" id="homepage" rel="nofollow">
+        <img align="right" height="128" id="icon" src="logo.svg" width="128"/>
+    </a>
 </p>
-
-**This is the client part of [elgato-pi-deck](https://github.com/pablomenino/elgato-pi-deck/) and works with [elgato-pi-deck-server](https://github.com/pablomenino/elgato-pi-deck-server/)**
+<h2>🏠 <a href="https://lab.mfwlab.com/lab/elgato-pi-deck/" id="homepage">Homepage</a></h2>
+<p>
+    elgato-pi-deck - Is a python script to control Elgato Stream Deck and send actions to elgato-pi-deck-server.
+</p>
+<!-- end description -->
 
 ## Table of contents
 
+* [How it works](#how-it-works)
 * [How to Use](#how-to-use)
-* [To-Do](#To-Do)
+* [Support me](#support-me)
+* [Third party](#third-party)
+
+## <a name="how-it-works"> How it works
+
+elgato-pi-deck - Is a python script to control Elgato Stream Deck and send actions to elgato-pi-deck-server.
 
 ## <a name="how-to-use">How to Use
 
@@ -336,3 +354,17 @@ Images path is in the Assets folder
 ```
 sudo ./uninstall.sh
 ```
+
+## <a name="support-me">Support me:
+
+### Librepay
+
+<a href="https://liberapay.com/pablomenino/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
+### Paypal
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4HPTG85J8NQVG)
+
+## <a name="third-party">Third party:
+
+* **Icons:** The icon images are from [Tela Icon Theme](https://github.com/vinceliuice/Tela-icon-theme)
